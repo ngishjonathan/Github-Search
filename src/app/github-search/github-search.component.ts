@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-github-search',
   templateUrl: './github-search.component.html',
@@ -7,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GithubSearchComponent implements OnInit {
 
-  constructor() { }
+
+  constructor() {
+    
+   }
 
   ngOnInit() {
   }

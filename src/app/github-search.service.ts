@@ -1,9 +1,14 @@
 import { Injectable } from '@angular/core';
+import {GithubSearch} from './github-search'
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class GithubSearchService {
+  getGithubsearch(){
+    return GithubSearch;
+  }
+  constructor() {
 
-  constructor() { }
+  } 
 }
+
+
