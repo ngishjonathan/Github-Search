@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import {AlertsService} from './alert-service/alerts.service'
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GithubSearchComponent } from './github-search/github-search.component';
@@ -17,8 +19,11 @@ import { GithubsearchFormComponent } from './githubsearch-form/githubsearch-form
   imports: [
     BrowserModule,
     AppRoutingModule
+    
+    
   ],
-  providers: [],
+  providers:[AlertsService],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }
