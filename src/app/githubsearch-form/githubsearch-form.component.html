@@ -3,10 +3,15 @@
     <div class="container-fluid">
         <div class="row">
             <div class="form-group">
-                <input type="text" name="searchUsers" [(ngModel)]="searchUsers" placeholder="search" id="search">
+                <input type="text" name="sesarchUser" [(ngModel)]="searchUsers" placeholder="search" id="search">
                 <button type="submit" (click)="githubSearch()" class="btn btn-success btn-lg">Search</button>
             </div>
         </div>
     </div>
 </form>
-
+<div *ngIf="users">
+    <img src="{{users.avatar_url}}" alt="">
+    <p>{{users.login}}</p>
+    <p>{{users.bio}}</p>
+    <p>{{users.public_repositories}}</p>
+</div>
