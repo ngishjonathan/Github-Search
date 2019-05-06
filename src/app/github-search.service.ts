@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers } from '@angular/http';
+import { Http } from '@angular/http';
 
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
@@ -14,7 +14,7 @@ export class GithubService {
     // private clientId: string = '<Client Id>';
     // private clientSecret: string = '<Client Secret Key>';
     private clientId: string = '60b9f23dedffbdfc476c';
-    private clientSecret: string = '74f1322aa40990c842dcf750e380cf9a5023fbf1'                                                                                                                           
+    private clientSecret: string = 'd1c186c6373f96571c0bfcf76b84e4dc6fd0c15a';
 
     constructor(private _http: Http) {
         // console.log('Github Service Ready.');
@@ -65,5 +65,3 @@ export class GithubService {
         }
     }
 }
-
-
