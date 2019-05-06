@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpClientModule} from '@angular/common/http'
+import {FormsModule} from '@angular/forms'
 
 import {AlertsService} from './alert-service/alerts.service'
 
@@ -14,11 +16,13 @@ import { GithubsearchFormComponent } from './githubsearch-form/githubsearch-form
     AppComponent,
     GithubSearchComponent,
     GithubsearchDetailsComponent,
-    GithubsearchFormComponent
+    GithubsearchFormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
     
     
   ],

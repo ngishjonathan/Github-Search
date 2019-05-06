@@ -3,10 +3,10 @@
     <div class="container-fluid">
         <div class="row">
             <div class="form-group">
-                <input type="text" name placeholder="search" id="search">
-                <button type="submit" class="btn btn-success btn-lg">Search</button>
-                </div>
-                </div>
-                </div>
-                
-                </form>
+                <input type="text" name="searchUsers" [(ngModel)]="searchUsers" placeholder="search" id="search">
+                <button type="submit" (click)="githubSearch()" class="btn btn-success btn-lg">Search</button>
+            </div>
+        </div>
+    </div>
+</form>
+
