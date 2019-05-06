@@ -15,6 +15,10 @@ git checkout branchname Go ahead and make changes After making changes use this 
 # Technologies used
 1.Angular 2.css 3.html 4.java script
 
+# BDD
+|      ## input              |       ## output
+|  input github username     |  output username,number of repos
+|                            |     and bio
 
 # GithubSearch
 
@@ -43,3 +47,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 # Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Copyright and License Information
+Copyright©2019 GithubSearch App
+Andrew mwangi
